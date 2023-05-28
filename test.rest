@@ -1,0 +1,31 @@
+@url = http://localhost:3000
+
+### Api Docs
+GET {{url}}
+
+### Get All Todos
+GET {{url}}/todos
+
+### Get Todo By Id
+GET {{url}}/todos/5
+
+### Add Todo
+POST {{url}}/todos
+content-type: application/json
+
+{
+  "name": "New Todo",
+  "description" : "New description"
+}
+
+### Update Todo
+PUT {{url}}/todos/1
+content-type: application/json
+
+{
+"name": "updated",
+"description": "Updated Description"
+}
+
+### Delete ToDo
+DELETE {{url}}/todos/5
